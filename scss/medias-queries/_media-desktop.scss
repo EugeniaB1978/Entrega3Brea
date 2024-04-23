@@ -1,0 +1,52 @@
+//variables
+$color-letra:#00a4a7;
+$tipo-letra: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+@media screen and (min-width: 1024px) {
+    header{
+        align-items: center;
+        nav{
+            display: block;
+            ul{
+                list-style: none;
+                display: flex;
+
+                li{
+                    margin: 5px;
+
+                    a{
+                        color: $color-letra;
+                        text-decoration:none;
+                        font-family: $tipo-letra;   
+                        transition: 1s;
+                        &:hover{
+                            color:green;
+                            background-color: #00b4e8;
+                            font-weight: bold;
+                            margin: 15px;
+                        }                    
+                    }
+                }
+            }
+        }
+        .boton-menu{
+            display: flex;
+            align-items: center;
+            
+            a{
+                display: block;
+                color:$color-letra;
+                text-decoration:none;
+                font-family: $tipo-letra;
+                margin-right: 15px; 
+                &:hover{
+                    color:green;
+                    background-color: #00b4e8;
+                    font-weight: bold;
+                    margin: 15px;
+                }                
+            }
+        }
+    }
+}

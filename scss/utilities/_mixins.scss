@@ -1,0 +1,33 @@
+@mixin estilo-titulo-tarjetas($tipo-letra,$alineacion,$tamano-letra,$color-letra){
+    font-family: $tipo-letra;
+    text-align: $alineacion;
+    font-size: $tamano-letra;
+    color: $color-letra;    
+}
+
+main{
+    section{
+        .section-tarjetas{            
+            .card-body{
+                .card-title{
+                    @include estilo-titulo-tarjetas (Tahoma,center,20px,black);
+                }                
+            }
+        }     
+    }
+}
+
+
+main{
+    section{  
+        .section-tarjetas-favoritos{
+            .card{
+                .card-body{
+                      h5{
+                        @include estilo-titulo-tarjetas (Tahoma,justify,20px, green);
+                        }
+                }
+            }
+        }
+    }
+}

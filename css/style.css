@@ -1,0 +1,245 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #edfffa;
+}
+
+header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+}
+header img {
+  width: 200px;
+}
+header nav {
+  display: none;
+  font-size: 25px;
+}
+header .boton-menu img {
+  width: 60px;
+}
+header .boton-menu a {
+  display: none;
+  font-size: 25px;
+}
+
+main section #titulo-principal {
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+main section p {
+  margin: 25px;
+  color: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main .videos {
+  margin-top: 30px;
+}
+
+footer {
+  border-top: 1px solid #515151;
+  background-color: #edfffa;
+  position: relative;
+  bottom: 0;
+}
+footer p {
+  text-align: center;
+}
+footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-tarjetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-tarjetas .card {
+  background-color: #cffff1;
+  background-image: linear-gradient(to right, #cffff1, #80b8a7);
+  margin: 10px;
+}
+.section-tarjetas .card .card-body h5 {
+  color: black;
+  font-weight: bold;
+}
+.section-tarjetas .card .card-body p {
+  color: black;
+}
+.section-tarjetas .card .card-body a {
+  background-color: lightblue;
+  background-image: linear-gradient(to bottom, #cffff1, rgb(16, 177, 231));
+  color: black;
+  border: 0px;
+}
+
+.section-tarjetas-favoritos {
+  justify-content: center;
+  align-items: center;
+  margin-left: 450px;
+}
+.section-tarjetas-favoritos .card {
+  background-color: #cffff1;
+  margin: 10px;
+}
+.section-tarjetas-favoritos .card .card-body h5 {
+  color: black;
+  font-weight: bold;
+}
+.section-tarjetas-favoritos .card .card-body p {
+  color: black;
+}
+.section-tarjetas-favoritos .card .card-body a {
+  background-color: lightblue;
+  color: black;
+  border: 0px;
+}
+.section-tarjetas-favoritos .card .card-text-anuncio {
+  font-weight: bold;
+}
+
+.titulo-principal-nosotros .card {
+  background-color: #cffff1;
+  margin: 10px;
+}
+.titulo-principal-nosotros .card .card-body h5 {
+  color: black;
+  font-weight: bold;
+}
+.titulo-principal-nosotros .card .card-body p {
+  color: black;
+}
+.titulo-principal-nosotros .card .card-body a {
+  background-color: lightblue;
+  color: black;
+  border: 0px;
+}
+.titulo-principal-nosotros .card .card-text-anuncio {
+  font-weight: bold;
+}
+.titulo-principal-nosotros .card .card-text-nosotros {
+  text-align: justify;
+}
+
+.container-videos {
+  text-align: center;
+  display: flex;
+  padding: 4%;
+}
+
+.form-informacion {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  padding: 30px;
+}
+.form-informacion p {
+  font-weight: bold;
+}
+.form-informacion .contact_form {
+  background-color: green;
+  display: block;
+  border-style: solid;
+  width: 480px;
+  padding: 10px;
+  border-radius: 5%;
+}
+.form-informacion .form-mapa {
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+}
+
+.formulario-contacto {
+  background-color: #cffff1;
+}
+.formulario-contacto .datos {
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form {
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  background-color: red;
+  padding: 10px;
+  width: 400px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: gray;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header {
+    align-items: center;
+  }
+  header nav {
+    display: block;
+  }
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  header nav ul li {
+    margin: 5px;
+  }
+  header nav ul li a {
+    color: #00a4a7;
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    transition: 1s;
+  }
+  header nav ul li a:hover {
+    color: green;
+    background-color: #00b4e8;
+    font-weight: bold;
+    margin: 15px;
+  }
+  header .boton-menu {
+    display: flex;
+    align-items: center;
+  }
+  header .boton-menu a {
+    display: block;
+    color: #00a4a7;
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 15px;
+  }
+  header .boton-menu a:hover {
+    color: green;
+    background-color: #00b4e8;
+    font-weight: bold;
+    margin: 15px;
+  }
+}
+main section .section-tarjetas .card-body .card-title {
+  font-family: Tahoma;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+
+main section .section-tarjetas-favoritos .card .card-body h5 {
+  font-family: Tahoma;
+  text-align: justify;
+  font-size: 20px;
+  color: green;
+}
+
+/*# sourceMappingURL=style.css.map */

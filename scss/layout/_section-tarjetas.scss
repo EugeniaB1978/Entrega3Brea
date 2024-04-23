@@ -1,0 +1,91 @@
+.section-tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;       
+    .card{
+        background-color: #cffff1;
+        background-image: linear-gradient(to right, #cffff1, #80b8a7);
+        margin: 10px; 
+
+        .card-body{
+            h5{
+                color: black;
+                font-weight: bold;
+            }
+
+            p{
+                color: black;                
+            }
+
+            a{
+                background-color: lightblue;
+                background-image: linear-gradient(to bottom, #cffff1, rgb(16, 177, 231));
+                color: black;
+                border: 0px;
+            }
+        }        
+    }
+}
+
+.section-tarjetas-favoritos{    
+    justify-content: center;
+    align-items: center; 
+    margin-left: 450px;    
+    .card{
+        background-color: #cffff1;
+        margin: 10px; 
+
+        .card-body{
+            h5{
+                color: black;
+                font-weight: bold;
+            }
+
+            p{
+                color: black;
+            }
+
+            a{
+                background-color: lightblue;
+                color: black;
+                border: 0px;
+            }
+        }
+        .card-text-anuncio{            
+            font-weight: bold;                        
+        }
+    }
+}
+
+.titulo-principal-nosotros{        
+    .card{
+        background-color: #cffff1;
+        margin: 10px; 
+
+        .card-body{
+            h5{
+                color: black;
+                font-weight: bold;
+            }
+
+            p{
+                color: black;
+            }
+
+            a{
+                background-color: lightblue;
+                color: black;
+                border: 0px;
+            }
+        }
+        .card-text-anuncio{            
+            font-weight: bold;                        
+        }
+        .card-text-nosotros{
+            text-align: justify;
+        }
+    }
+}
+
+
+
